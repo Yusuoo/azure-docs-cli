@@ -54,7 +54,8 @@ directCommands:
     summary: |-
       The rule that will be disabled. If none specified, all rules in the group will be disabled. If provided, --group-name must be provided too.
     description: |-
-      Usage: --rule rule-id=MyID state=MyState action=MyAction
+      Usage: --rule rule-id=MyID state=MyState action=MyAction sensitivity=MySensitivity
+      Allowed values for sensitivity: High, Medium, Low, None
       Multiple rules can be specified by using more than one `--rule` argument.
 - uid: az_network_application-gateway_waf-policy_managed-rule_rule-set_list
   name: az network application-gateway waf-policy managed-rule rule-set list
@@ -167,7 +168,8 @@ directCommands:
     summary: |-
       The rule that will be disabled. If none specified, all rules in the group will be disabled. If provided, --group-name must be provided too.
     description: |-
-      Usage: --rule rule-id=MyID state=MyState action=MyAction
+      Usage: --rule rule-id=MyID state=MyState action=MyAction sensitivity=MySensitivity
+      Allowed values for sensitivity: High, Medium, Low, None
       Multiple rules can be specified by using more than one `--rule` argument.
 commands:
 - az_network_application-gateway_waf-policy_managed-rule_rule-set_add
@@ -199,5 +201,5 @@ globalParameters:
   summary: |-
     Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  ms.date: 07/19/2024
+  ms.date: 10/16/2024
   description: Manage managed rule set of managed rules of a WAF policy.
